@@ -38,7 +38,41 @@ a:hover {
     margin: 0 auto;
     padding: 0 1rem;
 }
+/*---------------- SECTIONS ----------------*/
+.section {
+    padding: 3rem 0;
+}
 
+.section-light {
+    background-color: #f5f5f7;
+}
+.section-resume {
+    background-color: #ffffff;
+}
+
+.section-dark {
+    background-color: #22232f;
+    color: #f5f5f7;
+}
+.section-portfolio {
+    background-color: #f0f1f7;
+}
+.section-contact {
+    background-color: #ffffff;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.section-title-accent {
+    color: #e43f5a;
+}
+.section-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #66667c;
+    font-size: 0.95rem;
+}
 /*---------------- BUTTONS ----------------*/
 .btn {
     display: inline-block;
@@ -146,15 +180,13 @@ a:hover {
     transform: translateX(-50%);
 }
 .brand-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 8px solid #ffffff;
     box-shadow: 0 8px 25px rgba(0,0,0,0.35);
 }
-
-
 @media (max-width: 768px) {
     .header {
         text-align: center;
@@ -246,5 +278,151 @@ a:hover {
     .navbar-menu-right {
         justify-content: center;
         justify-self: center;
+    }
+}
+
+/*  ---------------- ABOUT ---------------- */
+.about-grid {
+    display: grid;
+    gap: 2rem;
+}
+.about-main {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(15, 23, 45, 0.08);
+}
+.about-side {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(15, 23, 45, 0.08);
+}
+.about-list {
+    margin: 0;
+}
+.about-list div + div {
+    margin-top: 0.75rem;
+}
+.about-list dt {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+.about-list dd {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .about-grid {
+        grid-template-columns: 2fr 1.2fr;
+    }
+}
+
+/*  ---------------- RESUME ---------------- */
+
+.resume-grid {
+    display: grid;
+    gap: 2rem;
+}
+.resume-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.resume-list li + li {
+    margin-top: 1.3rem;
+}
+.resume.meta {
+    font-size: 0.8rem;
+    color: #777;
+}
+.resume-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+.skills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+    .resume-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/*  ---------------- STATS ---------------- */
+.stats-grid {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.stat-label {
+    font-size: 0.9rem;
+    color: #cfd2ff;
+}
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/*  ---------------- PORTAFOLIO ---------------- */
+
+.portafolio-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+}
+/*usando grid, simular un layout más dinamico*/
+.bento-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+/*bloque bento*/
+.bento-item {
+    background-color: #ffffff;
+    border-radius: 0.9rem;
+    padding: 1.4rem;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bento-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
+
+@media (min-width: 900px) {
+    .bento-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-auto-rows: minmax(140px, auto);
+    }
+
+    /* Item ancho ocupando 2 columnas */
+    .bento-item--wide {
+        grid-column: span 2;
+    }
+
+    /* Item alto ocupando 2 filas */
+    .bento-item--tall {
+        grid-row: span 2;
     }
 }
