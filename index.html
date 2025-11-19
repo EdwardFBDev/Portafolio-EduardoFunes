@@ -41,7 +41,7 @@
 
               <!-- MENU LEFT -->
               <ul class="navbar-menu-left">
-                  <li class="nav-item"><a href="#home">Home</a></li>
+                  <li class="nav-item nav-item--active"><a href="#home">Home</a></li>
                   <li class="nav-item"><a href="#about">About</a></li>
                   <li class="nav-item"><a href="#resume">Resume</a></li>
               </ul>
@@ -61,208 +61,241 @@
           </div>                  
       </div>
   </nav>
+  <main>
+    <!--  ABOUT  -->
+    <section id="about" class="section section-light">
+      <div class="container">
 
-  <!--  ABOUT  -->
-  <section id="about" class="section section-light">
-    <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Sobre mí</h2>
+          <p class="section-subtitle">
+            Un pequeño resumen para presentarte como profesional o estudiante.
+          </p>
+        </header>
 
-      <header class="section-header">
-        <h2 class="section-title">Sobre mí</h2>
-        <p class="section-subtitle">
-          Un pequeño resumen para presentarte como profesional o estudiante.
-        </p>
-      </header>
+        <div class="about-grid">
 
-      <div class="about-grid">
+          <article class="about-main">
+            <h3>Perfil</h3>
+              <p>
+                Aquí puedes escribir un párrafo más largo sobre tus intereses, tu carrera,
+                tu forma de trabajar y los temas que más te gustan (por ejemplo: front-end,
+                data, automatización, etc.).
+              </p>
+          </article>
 
-        <article class="about-main">
-          <h3>Perfil</h3>
-            <p>
-              Aquí puedes escribir un párrafo más largo sobre tus intereses, tu carrera,
-              tu forma de trabajar y los temas que más te gustan (por ejemplo: front-end,
-              data, automatización, etc.).
-            </p>
-        </article>
-
-        <article class="about-side">
-          <h3>Datos rápidos</h3>
-          <dl class="about-list">
-
-            <div>
+          <article class="about-side">
+            <h3>Datos rápidos</h3>
+            <dl class="about-list">
+ 
               <dt>Ubicación</dt>
               <dd>Ciudad, País</dd>
-            </div>
-
-            <div>
+              
               <dt>Rol actual</dt>
               <dd>Estudiante / Junior Developer</dd>
-            </div>
 
-            <div>
               <dt>Intereses</dt>
               <dd>Front-end, POO, Bases de datos</dd>
-            </div>
 
-            <div>
               <dt>Correo</dt>
               <dd>tu@correo.com</dd>
-            </div>
-
-          </dl>
-        </article>
+            </dl>
+          </article>
+        </div>
       </div>
-     </div>
-  </section>
-  <!--  RESUME  -->
-  <!-- R.COLUMNS -->
-  <section id="resume" class="section section-resume">
+    </section>
+    <!--  RESUME  -->
+    <!-- R.COLUMNS -->
+    <section id="resume" class="section section-resume">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="section-title-accent">Mi</span>
+            Resumen
+          </h2>
+        </header>
+
+        <div class="resume-grid">
+          <!--  EXPERIENCE COLUMN -->
+          <section class="resume-column">
+            <h3>Experience</h3>
+            <ul class="resume-list">
+
+              <li>
+                <h4>Proyecto / Puesto 2</h4>
+                <p class="resume-meta">Año - Año *nombre de la institucion</p>
+                <p class="resume-text">Breve descripción de lo que hiciste, las tecnologías usadas y el impacto.</p>
+              </li>
+
+              <li>
+                <h4>Proyecto / Puesto 2</h4>
+                <p class="resume-meta">Año – Año</p>
+                <p class="resume-text">Otro proyecto relevante para tu formación en desarrollo de software.</p>
+              </li>
+
+            </ul>
+          </section>
+
+          <!--  EDUCATION COLUMN -->
+          <section class="resume-column">
+            <h3>Education</h3>
+            <ul class="resume-list">
+
+              <li>
+                <h4>Nombre del programa</h4>
+                <p class="resume-meta">año - actual o año *Universidad / Instituto.</p>
+                <p class="resume-text">Describe el enfoque del programa y los cursos más importantes.</p>
+              </li>
+
+              <li>
+                <h4>Curso / Certificación</h4>
+                <p class="resume-meta">año - actual o año *Universidad / Instituto.</p>
+                <p class="resume-text">Curso corto, certificación o taller que complemente tu perfil.</p>
+              </li>
+
+            </ul>
+          </section>
+
+          <section class="resume-column">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+              <li>HTML y CSS</li>
+              <li>Python / Java</li>
+              <li>POO y estructuras de datos</li>
+              <li>Git y GitHub</li>
+              <li>Trabajo en equipo</li>
+              <li>Comunicación</li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="section section-dark">
+      <div class="container">
+        <div class="stats-grid">
+
+          <article class="stat-item">
+            <p class="stat-number">10+</p>
+            <p class="stat-label">Proyectos academicos</p>
+          </article>
+
+          <article class="stat-item">
+            <p class="stat-number">3</p>
+            <p class="stat-label">Lenguajes que uso</p>
+          </article>
+
+          <article class="stat-item">
+            <p class="stat-number">X</p>
+            <p class="stat-label">Certificaciones</p>
+          </article>
+
+          <article class="stat-item">
+            <p class="stat-number">∞</p>
+            <p class="stat-label">Aprendizaje continuo</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PORFOLIO -->
+    <section id="portfolio" class="section section-portafolio">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="section-title-accent">Mi</span> Portafolio
+          </h2>
+          <p class="section-subtitle">Proyectos destacados organizados en un layout tipo "bento".</p>
+        </header>
+
+        <nav class="portafolio-filter" aria-label="Filtros de Portafolio">
+          <button type="button" class="pill">Nuevos</button>
+          <button type="button" class="pill">Web Development </button>
+          <button type="button" class="pill">Data Analyst </button>
+          <button type="button" class="pill">Development</button>
+        </nav>
+
+        <div class="bento-grid">
+
+          <article class="bento-item bento-item--wide">
+            <h3>Proyectos Web Development</h3>
+            <p>Landing page o portafolio construido con HTML y CSS. Explica brevemente el objetivo.</p>
+            <a href="#" class="bento-link">Ver código / demo</a>
+          </article>
+
+          <article class="bento-item">
+            <h3>App de POO en Java</h3>
+            <p>Proyecto de consola o Swing para practicar clases, herencia y polimorfismo.</p>
+            <a href="#" class="bento-link">Ver Detalles</a>
+          </article>
+
+          <article class="bento-item bento-item--tall">
+            <h3>Proyecto de Datos con Python</h3>
+            <p>Análisis de datos con pandas, visualización y pequeño modelo de Machine Learning.</p>
+            <a href="#" class="bento-link">Ver notebook</a>
+          </article>
+
+          <article class="bento-item">
+            <h3>Mini juego con Pygame</h3>
+            <p>Juego sencillo para practicar lógica, eventos y trabajo con archivos.</p>
+            <a href="#" class="bento-link">Ver repositorio</a>
+          </article>
+
+          <article class="bento-item">
+            <h3>Proyecto extra</h3>
+            <p>Espacio para otro proyecto que quieras destacar en tu portafolio.</p>
+            <a href="#" class="bento-link">Ver más</a>   
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-subtitle">Si quieres contactarme, puedes usar el formulario o el correo directo.</p>
+        </header>
+
+        <div class="contact-grid">
+          <form class="contact-form">
+
+            <label for="name">Nombre</label>
+            <input id="name" type="text" placeholder="Tu Nombre">
+
+            <label for="email">Correo</label>
+            <input id="email" type="text" placeholder="tu@correo.com">
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+
+            <button type="submit" class="btn btn-header">Enviar mensaje</button>
+
+          </form>
+          
+          <div class="contact-info">
+            <h3>Información adicional</h3>
+            <p><strong>Ubicación:</strong> Ciudad, País</p>
+            <p><!-- TODO: reemplazar por una imagen o enlace a Google Maps
+                                  en lugar de un mapa embebido con JS -->
+                              Puedes incluir un enlace a tu LinkedIn, GitHub u otras redes profesionales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+    <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="container">
-      <header class="section-header">
-        <h2 class="section-title">
-          <span class="section-title-accent">Mi</span>
-          Resumen
-        </h2>
-      </header>
-
-      <div class="resume-grid">
-        <!--  EXPERIENCE COLUMN -->
-        <section class="resume-column">
-          <h3>Experience</h3>
-          <ul class="resume-list">
-
-            <li>
-              <h4>Proyecto / Puesto 2</h4>
-              <p class="resume-meta">Año - Año *nombre de la institucion</p>
-              <p class="resume-text">Breve descripción de lo que hiciste, las tecnologías usadas y el impacto.</p>
-            </li>
-
-            <li>
-              <h4>Proyecto / Puesto 2</h4>
-              <p class="resume-meta">Año – Año</p>
-              <p class="resume-text">Otro proyecto relevante para tu formación en desarrollo de software.</p>
-            </li>
-
-          </ul>
-        </section>
-
-        <!--  EDUCATION COLUMN -->
-        <section class="resume-column">
-          <h3>Education</h3>
-          <ul class="resume-list">
-
-            <li>
-              <h4>Nombre del programa</h4>
-              <p class="resume-meta">año - actual o año *Universidad / Instituto.</p>
-              <p class="resume-text">Describe el enfoque del programa y los cursos más importantes.</p>
-            </li>
-
-            <li>
-              <h4>Curso / Certificación</h4>
-              <p class="resume-meta">año - actual o año *Universidad / Instituto.</p>
-              <p class="resume-text">Curso corto, certificación o taller que complemente tu perfil.</p>
-            </li>
-
-          </ul>
-        </section>
-
-        <section class="resume-column">
-          <h3>Skills</h3>
-          <ul class="skills-list">
-            <li>HTML y CSS</li>
-            <li>Python / Java</li>
-            <li>POO y estructuras de datos</li>
-            <li>Git y GitHub</li>
-            <li>Trabajo en equipo</li>
-            <li>Comunicación</li>
-          </ul>
-        </section>
-
-      </div>
+        <p>&copy; 2025 Tu Nombre. Portafolio académico.</p>
     </div>
-  </section>
-
-  <!-- STATS -->
-  <section id="stats" class="section section-dark">
-    <div class="container">
-      <div class="stats-grid">
-
-        <article class="stat-number">
-          <p class="stat-number">10+</p>
-          <p class="stat-label">Proyectos academicos</p>
-        </article>
-
-        <article class="stat-item">
-          <p class="stat-number">3</p>
-          <p class="stat-label">Lenguajes que uso</p>
-        </article>
-
-        <article class="stat-item">
-          <p class="stat-number">X</p>
-          <p class="stat-label">Certificaciones</p>
-        </article>
-
-        <article class="stat-item">
-          <p class="stat-number">∞</p>
-          <p class="stat-label">Aprendizaje continuo</p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PORFOLIO -->
-  <section id="portafolio" class="section section-portafolio">
-    <div class="container">
-
-      <header class="section-header">
-        <h2 class="section-title">
-          <span class="section-title-accent">Mi</span> Portafolio
-        </h2>
-        <p class="section-subtitle">Proyectos destacados organizados en un layout tipo "bento".</p>
-      </header>
-
-      <nav class="portafolio-filter" aria-label="Filtros de Portafolio">
-        <button type="button" class="pill">Nuevos</button>
-        <button type="button" class="pill">Web Development </button>
-        <button type="button" class="pill">Data Analyst </button>
-        <button type="button" class="pill">Development</button>
-      </nav>
-
-      <div class="bento-grid">
-        
-        <article class="bento-item bento-item--wide">
-          <h3>Proyectos Web Development</h3>
-          <p>Landing page o portafolio construido con HTML y CSS. Explica brevemente el objetivo.</p>
-          <a href="#" class="bento-link">Ver código / demo</a>
-        </article>
-
-        <article class="bento-item">
-          <h3>App de POO en Java</h3>
-          <p>Proyecto de consola o Swing para practicar clases, herencia y polimorfismo.</p>
-          <a href="#" class="bento-link">Ver Detalles</a>
-        </article>
-
-        <article class="bento-item bento-item--tall">
-          <h3>Proyecto de Datos con Python</h3>
-          <p>Análisis de datos con pandas, visualización y pequeño modelo de Machine Learning.</p>
-          <a href="#" class="bento-link">Ver notebook</a>
-        </article>
-
-        <article class="bento-item">
-          <h3>Mini juego con Pygame</h3>
-          <p>Juego sencillo para practicar lógica, eventos y trabajo con archivos.</p>
-          <a href="#" class="bento-link">Ver repositorio</a>
-        </article>
-
-        <article class="bento-item">
-          <h3>Proyecto extra</h3>
-          <p>Espacio para otro proyecto que quieras destacar en tu portafolio.</p>
-          <a href="#" class="bento-link">Ver más</a>   
-        </article>
-
-      </div>
-    </div>
-  </section>
-
+  </footer>    
 </body>
 </html>

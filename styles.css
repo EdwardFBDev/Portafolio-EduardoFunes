@@ -3,7 +3,10 @@
 *::after{
     box-sizing: border-box;
 }
-
+/*Para que el cambio por el link no sea feo y sea suave...*/
+html {
+    scroll-behavior: smooth;
+}
 /*---------------- ESTILO BASE ----------------*/
 body {
     margin: 0;
@@ -54,7 +57,7 @@ a:hover {
     background-color: #22232f;
     color: #f5f5f7;
 }
-.section-portfolio {
+.section-portafolio {
     background-color: #f0f1f7;
 }
 .section-contact {
@@ -104,6 +107,7 @@ a:hover {
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
+    z-index: 100;
 }
 
 .header-container {
@@ -139,6 +143,8 @@ a:hover {
 }
 
 .header-text {
+    position: relative;
+    z-index: 3;
     max-width: 550px;
 }
 .header-subtitle {
@@ -176,16 +182,23 @@ a:hover {
 .header-avatar {
     position: absolute;
     left: 50%;
-    bottom: -75px; /* cuánto cuelga sobre la navbar */
+    bottom: -200px; /* % que colgara sobre la navbar */
     transform: translateX(-50%);
+    z-index: 200;
 }
 .brand-img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     object-fit: cover;
     border: 8px solid #ffffff;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+}
+@media (max-width: 500px) {
+    .brand-img {
+        width: 170px;
+        height: 170px;
+    }
 }
 @media (max-width: 768px) {
     .header {
@@ -259,13 +272,49 @@ a:hover {
     color: #7a7b8f;
 }
 .nav-item a {
+    position: relative;
     font-size: 0.9rem;
     color: #55556e;
     font-weight: 500;
+    padding-bottom: 0.4rem;
 }
 .nav-item a:hover,
 .nav-item a:focus {
     color: #ff4c60;
+}
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.1rem;
+    height: 2px;
+    background-color: #ff4c60;
+    opacity: 0;
+    transform: scaleX(0.3);
+    transform-origin: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+    color: #ff4c60;
+}
+
+.nav-item a:hover::after,
+.nav-item a:focus::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Estado ACTIVO permanente (clase en el <li>) */
+.nav-item--active a {
+    color: #ff4c60;
+}
+
+.nav-item--active a::after {
+    opacity: 1;
+    transform: scaleX(1);
 }
 @media (max-width: 768px) {
     .navbar-supported {
@@ -335,7 +384,7 @@ a:hover {
 .resume-list li + li {
     margin-top: 1.3rem;
 }
-.resume.meta {
+.resume-meta {
     font-size: 0.8rem;
     color: #777;
 }
@@ -425,4 +474,43 @@ a:hover {
     .bento-item--tall {
         grid-row: span 2;
     }
+}
+/*  ---------------- CONTACTO ---------------- */
+.contact-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font: inherit;
+    margin-bottom: 0.9rem;
+}
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 2fr 1.2fr;
+    }
+}
+
+/*  ---------------- FOOTER ---------------- */
+.site-footer {
+    background-color: #1b1b24;
+    color: #bfc1d9;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 0.85rem;
 }
