@@ -1,301 +1,449 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio Eduardo Funes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduardo Funes | Full Stack Developer & Data Analyst</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body id="home">
-    <!--  HEADER  -->
-  <header class="header">
-      <div class="header-container">
+  <!-- HEADER  -->
+  <header class="header" aria-labelledby="hero-title">
+    <div class="header-container">
 
-          <!-- SOCIAL ICONS-->
-          <ul class="social-icons">
-              <li class="social-item"><a href="#">Red 1</a></li>
-              <li class="social-item"><a href="#">Red 2</a></li>
-              <li class="social-item"><a href="#">Red 3</a></li>
-          </ul>
+      <!-- Social icons -->
+      <ul class="social-icons">
+        <li class="social-item"><a href="https://www.linkedin.com/in/eduardo-funes/" target="_blank" rel="noopener">in</a></li>
+        <li class="social-item"><a href="https://github.com/EdwardFBDev" target="_blank" rel="noopener">gh</a></li>
+        <li class="social-item"><a href="#contact">✉</a></li>
+      </ul>
 
-          <!-- Texto principal -->
-          <div class="header-text">
-              <p class="header-subtitle">Hello, I am</p>
-              <h1 class="header-title">Eduardo Funes</h1>
-              <p class="header-role">Analyst | Developer</p>
-              <button class="btn btn-header">Print Resume</button>
-          </div>
+      <!-- header text -->
+      <div class="header-text">
+        <p class="header-subtitle">Hey, I am</p>
+        <h1 id="hero-title" class="header-title">Eduardo Funes</h1>
+        <p class="header-role">Full Stack Developer | Data Analyst</p>
 
-          <!-- AVATAR HEADER-->
-          <div class="header-avatar">
-              <img src="imgs/avatar.jpg" alt="Avatar" class="brand-img">
-          </div>
+        <p class="header-lead">
+          I build web apps and data-driven solutions, combining a structured, process-oriented mindset
+          with a strong curiosity for learning.
+        </p>
 
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-header">Contact me</a>
+          <button type="button" class="btn btn-outline">Print Resume</button>
+        </div>
       </div>
+
+      <!-- Avatar navbar -->
+      <div class="header-avatar">
+        <figure class="avatar-figure">
+          <img src="imgs/avatar.jpg" alt="Foto de perfil de Eduardo Funes" class="avatar-img">
+          <figcaption class="visually-hidden">Perfil de Eduardo Funes</figcaption>
+        </figure>
+      </div>
+    </div>
   </header>
 
-  <!--  NAVBAR -->
+  <!--  NAVBAR  -->
   <nav class="site-navbar" aria-label="Navegación principal">
-      <div class="navbar-container"> 
-          <div class="navbar-supported">
+    <div class="navbar-container">
+      <div class="navbar-supported">
+        <!-- LEFT MENU -->
+        <ul class="navbar-menu navbar-menu-left">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#resume">Resume</a></li>
+        </ul>
 
-              <!-- MENU LEFT -->
-              <ul class="navbar-menu-left">
-                  <li class="nav-item nav-item--active"><a href="#home">Home</a></li>
-                  <li class="nav-item"><a href="#about">About</a></li>
-                  <li class="nav-item"><a href="#resume">Resume</a></li>
-              </ul>
+        <!-- BRAND -->
+        <div class="navbar-brand">
+          <p class="brand-name">Eduardo Funes</p>
+          <p class="brand-role">Full Stack · Data Analyst</p>
+        </div>
 
-              <div class="brand-text-wrapper">
-                  <h5 class="brand-title">Eduardo Funes</h5>
-                  <div class="brand-subtitle">Analyst | Developer</div>
-              </div>
-
-              <!-- MENU RIGHT -->
-              <ul class="navbar-menu-right">
-                <li class="nav-item"><a href="#stats">Stats</a></li>
-                  <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-                  <li class="nav-item"><a href="#contact">Contact</a></li>
-              </ul>
-
-          </div>                  
+        <!-- RIGHT MENU -->
+        <ul class="navbar-menu navbar-menu-right">
+          <li class="nav-item"><a href="#stats">Stats</a></li>
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </div>
   </nav>
-  <main>
-    <!--  ABOUT  -->
-    <section id="about" class="section section-light">
-      <div class="container">
 
+  <main>
+    <!-- = ABOUT = -->
+    <section id="about" class="section section-light" aria-labelledby="about-title">
+      <div class="container">
         <header class="section-header">
-          <h2 class="section-title">Sobre mí</h2>
+          <h2 id="about-title" class="section-title">About me</h2>
           <p class="section-subtitle">
-            Un pequeño resumen para presentarte como profesional o estudiante.
+            A developer in training, combining software development with data analysis to build useful, well-structured solutions.
           </p>
         </header>
 
         <div class="about-grid">
-
-          <article class="about-main">
-            <h3>Perfil</h3>
-              <p>
-                Aquí puedes escribir un párrafo más largo sobre tus intereses, tu carrera,
-                tu forma de trabajar y los temas que más te gustan (por ejemplo: front-end,
-                data, automatización, etc.).
-              </p>
+          <!-- Perfil -->
+          <article class="card about-card">
+            <h3>Profile</h3>
+            <p>
+              I am a junior developer currently finishing a Technical Program in Software Development.
+              My focus is on full stack applications and data projects where I can connect business
+              needs with clean, maintainable code.
+            </p>
+            <p>
+              I enjoy understanding how things work, organizing workflows and improving processes step by step.
+            </p>
           </article>
 
-          <article class="about-side">
-            <h3>Datos rápidos</h3>
+          <!-- Datos rápidos -->
+          <article class="card about-card">
+            <h3>Quick facts</h3>
             <dl class="about-list">
- 
-              <dt>Ubicación</dt>
-              <dd>Ciudad, País</dd>
-              
-              <dt>Rol actual</dt>
-              <dd>Estudiante / Junior Developer</dd>
-
-              <dt>Intereses</dt>
-              <dd>Front-end, POO, Bases de datos</dd>
-
-              <dt>Correo</dt>
-              <dd>tu@correo.com</dd>
+              <div>
+                <dt>Location</dt>
+                <dd>San José · Costa Rica</dd>
+              </div>
+              <div>
+                <dt>Current role</dt>
+                <dd>Junior Software Developer & Data Analyst in training</dd>
+              </div>
+              <div>
+                <dt>Interests</dt>
+                <dd>Full Stack, Back-end, Data Analysis, Process automation</dd>
+              </div>
+              <div>
+                <dt>Languages</dt>
+                <dd>Spanish (native), English (intermediate)</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:edwardfb94@gmail.com">edwardfb94@gmail.com</a></dd>
+              </div>
             </dl>
           </article>
+
+          <!-- Aside / extra info -->
+          <aside class="card about-card about-aside">
+            <h3>How I work</h3>
+            <p>
+              I’m structured, process-oriented and analytical. I like to break problems into smaller steps,
+              prioritize tasks and document what I learn so future projects become easier.
+            </p>
+            <p>
+              I’m open to remote or hybrid roles and looking for junior positions or internships where I can
+              keep growing alongside a team.
+            </p>
+          </aside>
         </div>
       </div>
     </section>
+
     <!--  RESUME  -->
-    <!-- R.COLUMNS -->
-    <section id="resume" class="section section-resume">
+    <section id="resume" class="section section-resume" aria-labelledby="resume-title">
       <div class="container">
         <header class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-accent">Mi</span>
-            Resumen
+          <h2 id="resume-title" class="section-title">
+            <span class="section-title-accent">My</span> Resume
           </h2>
         </header>
 
         <div class="resume-grid">
-          <!--  EXPERIENCE COLUMN -->
+
+          <!-- EXPERIENCIA -->
           <section class="resume-column">
             <h3>Experience</h3>
             <ul class="resume-list">
-
-              <li>
-                <h4>Proyecto / Puesto 2</h4>
-                <p class="resume-meta">Año - Año *nombre de la institucion</p>
-                <p class="resume-text">Breve descripción de lo que hiciste, las tecnologías usadas y el impacto.</p>
+              <li class="resume-item">
+                <h4>Mini ERP for Construction Projects</h4>
+                <p class="resume-meta">2024 · Academic & personal project</p>
+                <p class="resume-text">
+                  Desktop-style tool to track items, stock movements and small construction projects.
+                </p>
+                <p class="resume-text">
+                  I designed the database, built the main modules and implemented basic reporting.
+                </p>
               </li>
 
-              <li>
-                <h4>Proyecto / Puesto 2</h4>
-                <p class="resume-meta">Año – Año</p>
-                <p class="resume-text">Otro proyecto relevante para tu formación en desarrollo de software.</p>
+              <li class="resume-item">
+                <h4>Treasure Map Pathfinder</h4>
+                <p class="resume-meta">2024 · Academic project</p>
+                <p class="resume-text">
+                  Pygame application that generates maps and uses backtracking to find paths to hidden treasures.
+                </p>
               </li>
-
             </ul>
           </section>
 
-          <!--  EDUCATION COLUMN -->
+          <!-- EDUCACIÓN -->
           <section class="resume-column">
             <h3>Education</h3>
             <ul class="resume-list">
-
-              <li>
-                <h4>Nombre del programa</h4>
-                <p class="resume-meta">año - actual o año *Universidad / Instituto.</p>
-                <p class="resume-text">Describe el enfoque del programa y los cursos más importantes.</p>
+              <li class="resume-item">
+                <h4>Technical Program in Software Development</h4>
+                <p class="resume-meta">2024 – Present · TEC</p>
+                <p class="resume-text">
+                  Full stack focus: Java, Python, web fundamentals, OOP, databases and basic UI.
+                </p>
               </li>
-
-              <li>
-                <h4>Curso / Certificación</h4>
-                <p class="resume-meta">año - actual o año *Universidad / Instituto.</p>
-                <p class="resume-text">Curso corto, certificación o taller que complemente tu perfil.</p>
+              <li class="resume-item">
+                <h4>Technical Program in Data Analysis</h4>
+                <p class="resume-meta">CENFOTEC</p>
+                <p class="resume-text">
+                  Python, R, SQL, statistics and dashboards with Power BI and Excel.
+                </p>
               </li>
-
+              <li class="resume-item">
+                <h4>Architectural Drafting & Additional Courses</h4>
+                <p class="resume-meta">Technical High School & online courses</p>
+                <p class="resume-text">
+                  Architectural drafting, Excel Advanced and a Data Science with Python master course.
+                </p>
+              </li>
             </ul>
           </section>
 
+          <!-- SKILLS -->
           <section class="resume-column">
             <h3>Skills</h3>
+
+            <h4 class="skills-group-title">Languages</h4>
             <ul class="skills-list">
-              <li>HTML y CSS</li>
-              <li>Python / Java</li>
-              <li>POO y estructuras de datos</li>
-              <li>Git y GitHub</li>
-              <li>Trabajo en equipo</li>
-              <li>Comunicación</li>
+              <li>Python • Java • SQL • R • JavaScript • HTML • CSS</li>
+            </ul>
+
+            <h4 class="skills-group-title">Tools & Tech</h4>
+            <ul class="skills-list skills-list--tags">
+              <li>Git</li>
+              <li>PostgreSQL</li>
+              <li>Power BI</li>
+              <li>Pandas / NumPy</li>
+              <li>VS Code</li>
+              <li>Pygame</li>
+              <li>NetBeans</li>
+              <li>RStudio</li>
+              <li>Excel Advanced</li>
+            </ul>
+
+            <h4 class="skills-group-title">Soft skills</h4>
+            <ul class="skills-list skills-list--tags">
+              <li>Problem solving</li>
+              <li>Teamwork</li>
+              <li>Self-learning</li>
+              <li>Adaptability</li>
+              <li>Process-oriented</li>
+              <li>Task prioritization</li>
+              <li>Fast learner</li>
             </ul>
           </section>
-
         </div>
       </div>
     </section>
 
-    <!-- STATS -->
-    <section id="stats" class="section section-dark">
+    <!--  STATS  -->
+    <section id="stats" class="section section-dark" aria-label="Estadísticas rápidas">
       <div class="container">
         <div class="stats-grid">
-
           <article class="stat-item">
             <p class="stat-number">10+</p>
-            <p class="stat-label">Proyectos academicos</p>
+            <p class="stat-label">Projects completed</p>
           </article>
 
           <article class="stat-item">
-            <p class="stat-number">3</p>
-            <p class="stat-label">Lenguajes que uso</p>
+            <p class="stat-number">4</p>
+            <p class="stat-label">Programming languages</p>
           </article>
 
           <article class="stat-item">
-            <p class="stat-number">X</p>
-            <p class="stat-label">Certificaciones</p>
+            <p class="stat-number">6+</p>
+            <p class="stat-label">Certifications &amp; courses</p>
           </article>
 
           <article class="stat-item">
             <p class="stat-number">∞</p>
-            <p class="stat-label">Aprendizaje continuo</p>
+            <p class="stat-label">Continuous learning</p>
           </article>
 
+          <article class="stat-item">
+            <p class="stat-number">0</p>
+            <p class="stat-label">Fear of refactoring</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PORFOLIO -->
-    <section id="portfolio" class="section section-portafolio">
+    <!--  PORTFOLIO  -->
+    <section id="portfolio" class="section section-portfolio" aria-labelledby="portfolio-title">
       <div class="container">
-
         <header class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-accent">Mi</span> Portafolio
+          <h2 id="portfolio-title" class="section-title">
+            <span class="section-title-accent">My</span> Portfolio
           </h2>
-          <p class="section-subtitle">Proyectos destacados organizados en un layout tipo "bento".</p>
         </header>
 
-        <nav class="portafolio-filter" aria-label="Filtros de Portafolio">
-          <button type="button" class="pill">Nuevos</button>
-          <button type="button" class="pill">Web Development </button>
-          <button type="button" class="pill">Data Analyst </button>
-          <button type="button" class="pill">Development</button>
+        <!-- bento filters -->
+        <nav class="portfolio-filter" aria-label="Portfolio filters">
+          <button type="button" class="pill pill-active">New</button>
+          <button type="button" class="pill">Web Development</button>
+          <button type="button" class="pill">Data Analyst</button>
+          <button type="button" class="pill">Software / Apps</button>
         </nav>
 
-        <div class="bento-grid">
-
-          <article class="bento-item bento-item--wide">
-            <h3>Proyectos Web Development</h3>
-            <p>Landing page o portafolio construido con HTML y CSS. Explica brevemente el objetivo.</p>
-            <a href="#" class="bento-link">Ver código / demo</a>
+        <div class="portfolio-grid">
+          <!-- FEATURED -->
+          <article class="portfolio-card portfolio-card--featured" data-type="web">
+            <figure class="portfolio-figure">
+              <img src="imgs/portfolio-1.jpg" alt="Pantalla del mini ERP para proyectos de construcción">
+              <figcaption class="portfolio-category">Web · Desktop-style tool</figcaption>
+            </figure>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Mini ERP for Construction Projects</h3>
+              <p class="portfolio-description">
+                Small ERP-like system to manage items, stock movements and project deliveries for a paving-stones company.
+              </p>
+              <p class="portfolio-type">Type: Web / Desktop-style · Personal & academic</p>
+              <p class="portfolio-tech">Tech: Python, SQLite, PyQt, Excel</p>
+              <p class="portfolio-link">GitHub: <a href="https://github.com/EdwardFBDev" target="_blank" rel="noopener">Repository</a></p>
+            </div>
           </article>
 
-          <article class="bento-item">
-            <h3>App de POO en Java</h3>
-            <p>Proyecto de consola o Swing para practicar clases, herencia y polimorfismo.</p>
-            <a href="#" class="bento-link">Ver Detalles</a>
+          <!-- PYGAME -->
+          <article class="portfolio-card" data-type="software">
+            <figure class="portfolio-figure">
+              <img src="imgs/portfolio-1.jpg" alt="Interfaz del juego Treasure Map Pathfinder en Pygame">
+              <figcaption class="portfolio-category">Pygame · Algorithms</figcaption>
+            </figure>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Treasure Map Pathfinder</h3>
+              <p class="portfolio-description">
+                Game that creates random maps with obstacles and uses backtracking to find valid paths to hidden treasures.
+              </p>
+              <p class="portfolio-type">Type: Game / Academic project</p>
+              <p class="portfolio-tech">Tech: Python, Pygame, Backtracking</p>
+            </div>
           </article>
 
-          <article class="bento-item bento-item--tall">
-            <h3>Proyecto de Datos con Python</h3>
-            <p>Análisis de datos con pandas, visualización y pequeño modelo de Machine Learning.</p>
-            <a href="#" class="bento-link">Ver notebook</a>
+          <!-- GRAPH / DATA -->
+          <article class="portfolio-card portfolio-card--tall" data-type="data">
+            <figure class="portfolio-figure">
+              <img src="imgs/portfolio-1.jpg" alt="Visualización conceptual de rutas y nodos en un grafo">
+              <figcaption class="portfolio-category">Data · Graphs</figcaption>
+            </figure>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Logistics Network Explorer</h3>
+              <p class="portfolio-description">
+                Graph-based tool to load routes from CSV, explore connections and analyze simple logistics scenarios.
+              </p>
+              <p class="portfolio-type">Type: Data / Algorithmic project</p>
+              <p class="portfolio-tech">Tech: Python, custom Graph structures, CSV</p>
+            </div>
           </article>
 
-          <article class="bento-item">
-            <h3>Mini juego con Pygame</h3>
-            <p>Juego sencillo para practicar lógica, eventos y trabajo con archivos.</p>
-            <a href="#" class="bento-link">Ver repositorio</a>
+          <!-- JAVA LIBRARY -->
+          <article class="portfolio-card" data-type="software">
+            <figure class="portfolio-figure">
+              <img src="imgs/portfolio-1.jpg" alt="Pantalla de gestión de libros y préstamos en Java">
+              <figcaption class="portfolio-category">Java · OOP</figcaption>
+            </figure>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Library Manager</h3>
+              <p class="portfolio-description">
+                OOP-based system to register books, manage loans/returns and practice inheritance, interfaces and polymorphism.
+              </p>
+              <p class="portfolio-type">Type: Java desktop · Academic</p>
+              <p class="portfolio-tech">Tech: Java, OOP, Swing (conceptual)</p>
+            </div>
           </article>
 
-          <article class="bento-item">
-            <h3>Proyecto extra</h3>
-            <p>Espacio para otro proyecto que quieras destacar en tu portafolio.</p>
-            <a href="#" class="bento-link">Ver más</a>   
+          <!-- JAVA RADIO -->
+          <article class="portfolio-card" data-type="software">
+            <figure class="portfolio-figure">
+              <img src="imgs/portfolio-1.jpg" alt="Interfaz conceptual de administración de una radio">
+              <figcaption class="portfolio-category">Java · MVC</figcaption>
+            </figure>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Radio Station Manager</h3>
+              <p class="portfolio-description">
+                Java project using MVC to manage radio shows, discs and tracks with multiple screens and simple CRUD.
+              </p>
+              <p class="portfolio-type">Type: Java desktop · Academic</p>
+              <p class="portfolio-tech">Tech: Java, MVC, Swing</p>
+            </div>
           </article>
 
+          <!-- PLACEHOLDER / FUTURE -->
+          <article class="portfolio-card" data-type="web">
+            <figure class="portfolio-figure">
+              <img src="imgs/portfolio-1.jpg" alt="Espacio reservado para futuros proyectos web">
+              <figcaption class="portfolio-category">Coming soon</figcaption>
+            </figure>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Next web project</h3>
+              <p class="portfolio-description">
+                Placeholder for a future web application. Coming soon...
+              </p>
+              <p class="portfolio-type">Type: Web · To be defined</p>
+              <p class="portfolio-tech">Tech: HTML, CSS, JavaScript (planned)</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section-contact">
+    <!-- = CONTACT = -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-header">
-          <h2 class="section-title">Contacto</h2>
-          <p class="section-subtitle">Si quieres contactarme, puedes usar el formulario o el correo directo.</p>
+          <h2 id="contact-title" class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            If you'd like to get in touch, feel free to use the form or email me directly.
+          </p>
         </header>
 
         <div class="contact-grid">
-          <form class="contact-form">
+          <!-- Form -->
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
 
-            <label for="name">Nombre</label>
-            <input id="name" type="text" placeholder="Tu Nombre">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-            <label for="email">Correo</label>
-            <input id="email" type="text" placeholder="tu@correo.com">
-
-            <label for="message">Mensaje</label>
-            <textarea id="message" rows="5" placeholder="Escribe tu mensaje..."></textarea>
-
-            <button type="submit" class="btn btn-header">Enviar mensaje</button>
-
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            <!-- Change the button type to Summit so that it triggers  -->
+            <button type="button" class="btn btn-header">Send message</button>
           </form>
-          
-          <div class="contact-info">
-            <h3>Información adicional</h3>
-            <p><strong>Ubicación:</strong> Ciudad, País</p>
-            <p><!-- TODO: reemplazar por una imagen o enlace a Google Maps
-                                  en lugar de un mapa embebido con JS -->
-                              Puedes incluir un enlace a tu LinkedIn, GitHub u otras redes profesionales.</p>
-          </div>
+
+          <!-- Info  -->
+          <aside class="contact-info">
+            <h3>Additional info</h3>
+            <p><strong>Location:</strong> San José · Costa Rica</p>
+            <p><strong>Email:</strong> <a href="mailto:edwardfb94@gmail.com">edwardfb94@gmail.com</a></p>
+            <p><strong>Phone:</strong> +506 8888-0000</p>
+
+            <p>
+              I'm looking for junior and internship opportunities in full stack development and data analysis,
+              open to remote or hybrid roles.
+            </p>
+
+            <p><strong>Profiles:</strong></p>
+            <ul class="contact-links">
+              <li><a href="https://www.linkedin.com/in/eduardo-funes/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/EdwardFBDev" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
   </main>
-  
-    <!-- FOOTER -->
+
+  <!-- = FOOTER = -->
   <footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2025 Tu Nombre. Portafolio académico.</p>
+    <div class="container footer-container">
+      <p>&copy; 2025 Eduardo Funes | portfolio project.</p>
     </div>
-  </footer>    
+  </footer>
 </body>
 </html>
